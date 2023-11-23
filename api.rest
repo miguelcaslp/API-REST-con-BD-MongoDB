@@ -1,64 +1,49 @@
 # Ejemplos
 
-POST http://localhost:3000/api/users HTTP/1.1
+POST http://localhost:3000/api/products HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Eva", 
-    "edad": 20 
+    "nombre": "Camiseta", 
+    "precio": 200 ,
+    "marca": "Gucci"
 }
 
 ### 
 
-POST http://localhost:3000/api/users HTTP/1.1
+POST http://localhost:3000/api/products HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Eugenio", 
-    "edad": 21 
+  "nombre": "Lampara", 
+    "precio": 13 ,
+    "marca": "Fury"
 }
 
 ### 
 
-GET http://localhost:3000/api/users HTTP/1.1
+GET http://localhost:3000/api/products HTTP/1.1
 content-type: application/json
 
 ###
 
-GET http://localhost:3000/api/users/6544f16661269657e5324e80 HTTP/1.1
+GET http://localhost:3000/api/products/655fcafbbbe73a079034d6d4 HTTP/1.1
 content-type: application/json
 
 ###
 
-PUT http://localhost:3000/api/users/655a9b3e8b8747bc6a13a543 HTTP/1.1
+PUT http://localhost:3000/api/products/655fcc35bbe73a079034d6d6 HTTP/1.1
 content-type: application/json
 
 { 
-    "nombre": "Pedro", 
-    "edad": 42
+   "nombre": "Armario", 
+    "precio": 780 ,
+    "marca": "Ikea"
 }
 
 ###
 
-DELETE http://localhost:3000/api/users/6544f16661269657e5324e80 HTTP/1.1
+DELETE http://localhost:3000/api/products/655fcc26bbe73a079034d6d5 HTTP/1.1
 content-type: application/json
 
-###
 
-DELETE https://nxapi-mongodb.vercel.app/api/users/6542da20c20d9ad95c739701 HTTP/1.1
-content-type: application/json
-
-### 
-
-POST https://nxapi-mongodb.vercel.app/api/users HTTP/1.1
-content-type: application/json
-
-{ 
-    "nombre": "Jose", 
-    "edad": 21 
-}
-
-### 
-
-DELETE https://nxapi-mongodb.vercel.app/api/users/6542da35c20d9ad95c739702
-content-type: application/json
